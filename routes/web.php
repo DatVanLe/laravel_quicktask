@@ -10,7 +10,5 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+//show
+Route::get('index', ['as' => 'index', 'uses' => 'quickController@getindex']);
