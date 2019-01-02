@@ -12,3 +12,8 @@
 */
 //show
 Route::get('index', ['as' => 'index', 'uses' => 'quickController@getindex']);
+
+//add and show asc
+Route::post('add', ['as' => 'add', 'uses' => 'quickController@postadd']);
+Route::get('resetindex', ['as' => 'resetindex', 'uses'=> 'quickController@getresetindex']);
+
