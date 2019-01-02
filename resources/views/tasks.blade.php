@@ -2,6 +2,7 @@
 @section('content')
 
 <div class="pannel-body">
+
 	@include('errors')
 	{!! Form::open() !!}
 		<div class="form-group">
