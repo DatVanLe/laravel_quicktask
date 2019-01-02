@@ -29,5 +29,6 @@ class quickController extends Controller
     public function getresetindex(){
         $tasks = Task::orderBy('created_at', 'asc') -> get();
         return view('index', compact('tasks'));
+        return view('tasks');
     }
 }
